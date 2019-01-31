@@ -9,6 +9,7 @@ Buttons
 ^^^^^^^
 
 There are 2 buttons in the Logging screen:
+
 * Clear Logging: Clear all previous log entries.
 * Save Logging: Save all log entries to file.
 
