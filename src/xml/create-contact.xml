@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <create>
+      <contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd">
+        <contact:id>you_choose_it</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>Eric Paul Peeters</contact:name>
+          <contact:org>EPP Company</contact:org>
+          <contact:addr>
+            <contact:street>Naamsestraat 78</contact:street>
+            <contact:street>bus 5</contact:street>
+            <contact:city>Leuven</contact:city>
+            <contact:pc>3000</contact:pc>
+            <contact:cc>BE</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+32.16345656</contact:voice>
+        <contact:fax>+35.16345656</contact:fax>
+        <contact:email>eric.peeters@example.com</contact:email>
+        <contact:authInfo>
+          <contact:pw>petroleum</contact:pw>
+        </contact:authInfo>
+      </contact:create>
+    </create>
+    <extension>
+      <dnsbe:ext xmlns:dnsbe="http://www.dns.be/xml/epp/dnsbe-1.0" xsi:schemaLocation="http://www.dns.be/xml/epp/dnsbe-1.0 dnsbe-1.0.xsd">
+        <dnsbe:create>
+          <dnsbe:contact>
+            <dnsbe:type>licensee</dnsbe:type>
+            <dnsbe:vat>3455345645</dnsbe:vat>
+            <dnsbe:lang>en</dnsbe:lang>
+          </dnsbe:contact>
+        </dnsbe:create>
+      </dnsbe:ext>
+    </extension>
+    <clTRID>create-contact-00</clTRID>
+  </command>
+</epp>
